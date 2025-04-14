@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cafe Menu</title>
-    <link href="styles.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  </head>
-  <body>
-    <div class="menu">
-      <main>
-        <h1>CAMPER CAFE</h1>
-        <p style="text-align: center;">Est. 2020</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Camper Cafe Menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="menu">
+    <h1>CAMPER CAFE</h1>
+    <p class="established">Est. 2020</p>
+    <hr />
 
-        <section>
-          <h2>Coffee</h2>
-          <article class="item"><p class="flavor">French Vanilla</p><p class="price">3.00</p></article>
-          <article class="item"><p class="flavor">Caramel Macchiato</p><p class="price">3.75</p></article>
-          <article class="item"><p class="flavor">Pumpkin Spice</p><p class="price">3.50</p></article>
-          <article class="item"><p class="flavor">Hazelnut</p><p class="price">4.00</p></article>
-          <article class="item"><p class="flavor">Mocha</p><p class="price">4.50</p></article>
-        </section>
+    <section>
+      <h2>Coffee</h2>
+      <div class="item" onclick="addToOrder('French Vanilla', 3.00)">
+        <p class="flavor">French Vanilla</p><p class="price">$3.00</p>
+      </div>
+      <div class="item" onclick="addToOrder('Caramel Macchiato', 3.75)">
+        <p class="flavor">Caramel Macchiato</p><p class="price">$3.75</p>
+      </div>
+      <div class="item" onclick="addToOrder('Pumpkin Spice', 3.50)">
+        <p class="flavor">Pumpkin Spice</p><p class="price">$3.50</p>
+      </div>
+    </section>
 
-        <section>
-          <h2>Desserts</h2>
-          <article class="item"><p class="flavor">Donut</p><p class="price">1.50</p></article>
-          <article class="item"><p class="flavor">Cherry Pie</p><p class="price">2.75</p></article>
-          <article class="item"><p class="flavor">Cheesecake</p><p class="price">3.00</p></article>
-          <article class="item"><p class="flavor">Cinnamon Roll</p><p class="price">2.50</p></article>
-        </section>
+    <section>
+      <h2>Desserts</h2>
+      <div class="item" onclick="addToOrder('Donut', 1.50)">
+        <p class="dessert">Donut</p><p class="price">$1.50</p>
+      </div>
+      <div class="item" onclick="addToOrder('Croissant', 2.00)">
+        <p class="dessert">Croissant</p><p class="price">$2.00</p>
+      </div>
+    </section>
 
-        <p id="total">Total: $0.00</p>
-        <button id="reset">Reset Order</button>
-      </main>
-    </div>
+    <hr class="bottom-line" />
 
-    <script src="script.js"></script>
-  </body>
+    <section id="order-summary">
+      <h2>Your Order</h2>
+      <ul id="order-list"></ul>
+      <p id="total">Total: $0.00</p>
+      <button onclick="resetOrder()">Reset Order</button>
+    </section>
+  </div>
+
+  <footer>
+    <p class="address">123 Cafe Street, Coffee City</p>
+    <p>Website by <a href="#">Mutiara Ayu</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>

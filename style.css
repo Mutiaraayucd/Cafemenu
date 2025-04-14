@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  background-image: url('https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg');
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  color: #333;
+}
+
+.menu {
+  width: 90%;
+  max-width: 600px;
+  background-color: burlywood;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #4e342e;
+}
+
+.established {
+  font-style: italic;
+  color: #6d4c41;
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  background: #fff3e0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s;
+}
+.item:hover {
+  transform: scale(1.02);
+  background-color: #ffe0b2;
+}
+
+.flavor, .dessert {
+  width: 75%;
+}
+
+.price {
+  width: 25%;
+  text-align: right;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: brown;
+  margin: 20px 0;
+}
+
+#order-summary {
+  background: #fff8e1;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#order-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+
+#order-list li {
+  padding: 5px 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+#total {
+  font-weight: bold;
+  text-align: right;
+  font-size: 1.2em;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #6d4c41;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+button:hover {
+  background-color: #4e342e;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #3e2723;
+}
